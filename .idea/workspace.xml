@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e206e40-b1ad-490d-9edb-a45831aff79e" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="9e206e40-b1ad-490d-9edb-a45831aff79e" name="Default Changelist" comment="test">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/BlackJackGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/BlackJackGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/META-INF/BlackJack.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlackJackGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlackJackGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
+    </list>
+    <list id="15eabee5-4926-411d-9b6f-e63f8bbb8bcc" name="test" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,23 +24,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Uys8CdyHxlPHBzIqd5KvL0uLw1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PacMan/vgtu-2019-refactoring-exercise" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="BlackJackGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -49,6 +55,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -60,10 +78,78 @@
       <option name="presentableId" value="Default" />
       <updated>1576340007574</updated>
       <workItem from="1576340009135" duration="4696000" />
+      <workItem from="1576350922813" duration="317000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1576351061810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576351061810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="252" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576350939965">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="252" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576350939965" />
+    <state x="76" y="118" width="1649" height="813" key="CommitChangelistDialog2" timestamp="1576352312744">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="76" y="118" width="1649" height="813" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1576352312744" />
+    <state x="124" y="86" key="DiffContextDialog" timestamp="1576352297339">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="124" y="86" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576352297339" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1576351289303">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1576351289303" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1576351289303">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1576351289303" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1576351289302">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1576351289302" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1576351289303">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1576351289303" />
+    <state x="721" y="235" key="RollbackChangesDialog" timestamp="1576352298494">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="721" y="235" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576352298494" />
+    <state x="807" y="440" key="VCS.ChangelistChooser" timestamp="1576351311496">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="807" y="440" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1576351311496" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1576351300060">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1576351300060" />
   </component>
 </project>
