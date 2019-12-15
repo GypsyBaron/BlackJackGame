@@ -12,7 +12,6 @@ public class Deck {
 
     public Deck(ShuffleStrategy shuffleStrategy) {
         this.cards = new ArrayList<Card>();
-
         this.shuffleStrategy = shuffleStrategy;
     }
 
@@ -30,20 +29,9 @@ public class Deck {
     }
 
     public void shuffle() {
-
-//        ArrayList<Card> newCardDeck = new ArrayList<Card>();
-//////        Random rand = new Random();
-//////        int cardIndex = 0;
-//////        for (int i = 0; i < 52; i++) {
-//////            cardIndex = rand.nextInt((this.cards.size() - 1) + 1);
-//////            newCardDeck.add(this.cards.get(cardIndex));
-//////            this.cards.remove(cardIndex);
-//////        }
-//////
-//////        this.cards = newCardDeck;
-
         cards = this.shuffleStrategy.shuffle(this.cards);
     }
+
     public int getDeckSize() {
         return this.cards.size();
     }

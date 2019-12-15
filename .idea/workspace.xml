@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e206e40-b1ad-490d-9edb-a45831aff79e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shuffleStrategy/RandomShuffle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shuffleStrategy/ShuffleBySuit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shuffleStrategy/ShuffleStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/CardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/GameSetupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/BlackJackGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/CardSuit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/CardValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/ConsoleInputReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/ConsoleOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Deck$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Deck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/GameSetup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlackJackGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BlackJackGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CardSuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CardValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ConsoleInputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ConsoleOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/Deck$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/Deck$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/Deck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Deck.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +33,10 @@
   <component name="ProjectId" id="1Uys8CdyHxlPHBzIqd5KvL0uLw1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PacMan/Tetris" />
@@ -64,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.tests in BlackJack">
     <configuration name="BlackJackGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.BlackJackGame" />
       <module name="BlackJack" />
@@ -72,8 +62,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameSetupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlackJack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GameSetupTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests in BlackJack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlackJack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.tests in BlackJack" />
+        <item itemvalue="JUnit.GameSetupTest" />
         <item itemvalue="Application.BlackJackGame" />
       </list>
     </recent_temporary>
@@ -94,5 +115,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Player.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BlackJack$BlackJackGame.ic" NAME="BlackJackGame Coverage Results" MODIFIED="1576437004106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
