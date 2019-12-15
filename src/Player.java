@@ -1,22 +1,47 @@
 public class Player {
 
     private Deck deck;
-    private double money;
+    private int money;
+    private String name;
+    private int bet;
 
-    public Player(Deck deck) {
+    public Player(String name, Deck deck) {
         this.deck = deck;
-        this.money = 1000.00;
+        this.name = name;
+        this.money = 1000;
     }
 
     public Deck getDeck() {
         return this.deck;
     }
 
-    public double getMoney() {
+    public int getMoney() {
         return this.money;
     }
 
-    public void changeBalance(double cash) {
-        this.money += cash;
+    public String getName() {
+        return this.name;
     }
+
+    public void addMoney() {
+        this.money += this.bet;
+        this.bet = 0;
+    }
+
+    public void removeMoney() {
+        this.money -= this.bet;
+        this.bet = 0;
+    }
+
+
+    public boolean addBet(int bet) {
+        if (this.money > bet) {
+            this.bet = bet;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
 }
