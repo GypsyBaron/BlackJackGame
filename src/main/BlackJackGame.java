@@ -1,9 +1,14 @@
+package main;
+
+import shuffleStrategy.RandomShuffle;
+import shuffleStrategy.ShuffleBySuit;
+
 import java.util.ArrayList;
 
 public class BlackJackGame {
     public static void main(String[] args) {
 
-        Deck gameDeck = new Deck();
+        Deck gameDeck = new Deck(new RandomShuffle());
         gameDeck.create();
 
         GameSetup setup = new GameSetup(1, 5);
@@ -14,32 +19,40 @@ public class BlackJackGame {
         Player dealer = new Player("Dealer", new Deck());
         ArrayList<Player> players = setup.createPlayers();
 
-
+        int roundCounter = 1;
+        Deck roundDeck =  gameDeck;
         while (players.get(0).getMoney() > 0 && players.get(0) != null) {
 
-            gameDeck.shuffle();
+            roundDeck = createShuffledDeck(roundCounter);
+            roundCounter++;
 
             addBets(players);
-            drawCards(players, dealer, gameDeck);
-
-            for (Player player : players) {
-                System.out.println(player.getMoney());
-            }
+            drawCards(players, dealer, roundDeck);
 
             output.print("Dealer cards: " + dealer.getDeck().getCard(0).toString() + " + {Hidden}");
 
-            makeMoves(players, gameDeck);
+            makeMoves(players, roundDeck);
 
             output.print("Dealers cards: " + dealer.getDeck().toString() + ", hand value - " + dealer.getDeck().cardsValue());
-            drawDealerCards(dealer, gameDeck);
+            drawDealerCards(dealer, roundDeck);
 
-            showResults(players, dealer, gameDeck);
-
-            for (Player player : players) {
-                System.out.println(player.getMoney());
-            }
-            moveCardsToMainDeck(players, dealer, gameDeck);
+            showResults(players, dealer, roundDeck);
+            moveCardsToMainDeck(players, dealer, roundDeck);
         }
+    }
+
+    private static Deck createShuffledDeck(int counter) {
+        Deck roundDeck;
+        if (counter % 2 == 0) {
+            roundDeck = new Deck(new RandomShuffle());
+        } else {
+            roundDeck = new Deck(new ShuffleBySuit());
+        }
+
+        roundDeck.create();
+        roundDeck.shuffle();
+
+        return roundDeck;
     }
 
     private static void moveCardsToMainDeck(ArrayList<Player> players, Player dealer, Deck gameDeck) {

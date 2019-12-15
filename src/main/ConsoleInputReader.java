@@ -1,4 +1,5 @@
-import java.io.IOException;
+package main;
+
 import java.util.Scanner;
 
 public class ConsoleInputReader {

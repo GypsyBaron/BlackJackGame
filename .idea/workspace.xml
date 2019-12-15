@@ -2,16 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e206e40-b1ad-490d-9edb-a45831aff79e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ConsoleInputReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConsoleOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shuffleStrategy/RandomShuffle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shuffleStrategy/ShuffleBySuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shuffleStrategy/ShuffleStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/BlackJackGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/BlackJackGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlackJackGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlackJackGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/BlackJackGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/CardSuit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/CardValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/ConsoleInputReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/ConsoleOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Deck$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Deck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/GameSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlackJackGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BlackJackGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CardSuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CardValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ConsoleInputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ConsoleOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,7 +66,7 @@
   </component>
   <component name="RunManager">
     <configuration name="BlackJackGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BlackJackGame" />
+      <option name="MAIN_CLASS_NAME" value="main.BlackJackGame" />
       <module name="BlackJack" />
       <method v="2">
         <option name="Make" enabled="true" />

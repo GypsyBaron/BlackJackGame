@@ -1,13 +1,25 @@
+package main;
+
+import shuffleStrategy.ShuffleStrategy;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Deck {
 
     private ArrayList<Card> cards;
+    private ShuffleStrategy shuffleStrategy;
+
+    public Deck(ShuffleStrategy shuffleStrategy) {
+        this.cards = new ArrayList<Card>();
+
+        this.shuffleStrategy = shuffleStrategy;
+    }
 
     public Deck() {
         this.cards = new ArrayList<Card>();
     }
+
 
     public void create() {
         for (CardSuit cardSuit : CardSuit.values()) {
@@ -18,16 +30,19 @@ public class Deck {
     }
 
     public void shuffle() {
-        ArrayList<Card> newCardDeck = new ArrayList<Card>();
-        Random rand = new Random();
-        int cardIndex = 0;
-        for (int i = 0; i < 52; i++) {
-            cardIndex = rand.nextInt((this.cards.size() - 1) + 1);
-            newCardDeck.add(this.cards.get(cardIndex));
-            this.cards.remove(cardIndex);
-        }
 
-        this.cards = newCardDeck;
+//        ArrayList<Card> newCardDeck = new ArrayList<Card>();
+//////        Random rand = new Random();
+//////        int cardIndex = 0;
+//////        for (int i = 0; i < 52; i++) {
+//////            cardIndex = rand.nextInt((this.cards.size() - 1) + 1);
+//////            newCardDeck.add(this.cards.get(cardIndex));
+//////            this.cards.remove(cardIndex);
+//////        }
+//////
+//////        this.cards = newCardDeck;
+
+        cards = this.shuffleStrategy.shuffle(this.cards);
     }
     public int getDeckSize() {
         return this.cards.size();
