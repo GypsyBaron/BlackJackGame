@@ -40,7 +40,7 @@ public class GameSetup {
         playerCounter = getNumberOfPlayers();
 
         for (int i = 0; i < playerCounter; i++) {
-            String playerName = "Player " + (i+1);
+            String playerName = "Player" + (i+1);
             Player player = new Player(playerName, new Deck());
             players.add(player);
         }

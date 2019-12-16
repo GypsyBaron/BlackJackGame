@@ -2,8 +2,8 @@ package main;
 
 import command.Move;
 import command.MoveHitCommand;
-import command.RemoteController;
 import command.MoveStandCommand;
+import command.RemoteController;
 import shuffleStrategy.RandomShuffle;
 import shuffleStrategy.ShuffleBySuit;
 
@@ -11,23 +11,22 @@ import java.util.ArrayList;
 
 public class BlackJackGame {
     public static void main(String[] args) {
-
-        Deck gameDeck = new Deck();
-        gameDeck.create();
+//
+//        Deck gameDeck = new Deck();
+//        gameDeck.create();
 
         GameSetup setup = new GameSetup(1, 5);
 
         ConsoleOutput output = new ConsoleOutput();
-        ConsoleInputReader inputReader = new ConsoleInputReader();
 
         Player dealer = new Player("Dealer", new Deck());
         ArrayList<Player> players = setup.createPlayers();
 
-        int roundCounter = 1;
-        Deck roundDeck =  gameDeck;
-        while (players.get(0).getMoney() > 0 && players.get(0) != null) {
+        int roundCounter = 0;
 
-            roundDeck = createShuffledDeck(roundCounter);
+        while (players.size() > 0) {
+
+            Deck roundDeck = createShuffledDeck(roundCounter);
             roundCounter++;
 
             addBets(players);
@@ -43,11 +42,13 @@ public class BlackJackGame {
             showResults(players, dealer, roundDeck);
             moveCardsToMainDeck(players, dealer, roundDeck);
 
-            removePLayersWithZeroBalance(players);
+            removePlayersWithZeroBalance(players);
         }
+
+        output.print("All players lost their money. Game over");
     }
 
-    private static void removePLayersWithZeroBalance(ArrayList<Player> players) {
+    private static void removePlayersWithZeroBalance(ArrayList<Player> players) {
         int size = players.size();
 
         for (int i = 0; i < size; i++) {
@@ -87,7 +88,7 @@ public class BlackJackGame {
         while (dealer.getDeck().cardsValue() < 17) {
             dealer.getDeck().drawCard(gameDeck);
             output.print("Dealer got " + dealer.getDeck().getCard(dealer.getDeck().getDeckSize() - 1));
-            output.print("Dealers cards: " + dealer.getDeck().toString() + ", hand value - " + dealer.getDeck().cardsValue());
+            output.print("Dealer cards: " + dealer.getDeck().toString() + ", hand value - " + dealer.getDeck().cardsValue());
         }
     }
 
@@ -100,9 +101,9 @@ public class BlackJackGame {
                 output.print(player.getName() + " won against dealer");
                 player.addMoney();
             } else if (player.getDeck().cardsValue() == dealer.getDeck().cardsValue() && player.getDeck().cardsValue() <= 21) {
-                output.print(player.getName() + " you got Draw");
+                output.print(player.getName() + " got draw");
             } else {
-                output.print(player.getName() + " you lost.");
+                output.print(player.getName() + " lost.");
                 player.removeMoney();
             }
         }
@@ -136,12 +137,6 @@ public class BlackJackGame {
                 }
             }
         }
-    }
-
-    public static boolean stand() {
-        ConsoleOutput output = new ConsoleOutput();
-        output.print("You select stand");
-        return true;
     }
 
     public static boolean draw(Player player, Deck gameDeck) {

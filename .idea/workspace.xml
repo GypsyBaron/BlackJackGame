@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9e206e40-b1ad-490d-9edb-a45831aff79e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BlackJackGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BlackJackGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GameSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameSetup.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576340007574</updated>
       <workItem from="1576340009135" duration="4696000" />
-      <workItem from="1576486893198" duration="4706000" />
+      <workItem from="1576486893198" duration="4832000" />
+      <workItem from="1576500087663" duration="1034000" />
     </task>
     <servers />
   </component>
@@ -117,11 +117,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/BlackJackGame.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BlackJack$BlackJackGame.ic" NAME="BlackJackGame Coverage Results" MODIFIED="1576437004106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
