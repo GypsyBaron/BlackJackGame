@@ -1,5 +1,9 @@
 package main;
 
+import command.Move;
+import command.MoveHitCommand;
+import command.RemoteController;
+import command.MoveStandCommand;
 import shuffleStrategy.RandomShuffle;
 import shuffleStrategy.ShuffleBySuit;
 
@@ -8,7 +12,7 @@ import java.util.ArrayList;
 public class BlackJackGame {
     public static void main(String[] args) {
 
-        Deck gameDeck = new Deck(new RandomShuffle());
+        Deck gameDeck = new Deck();
         gameDeck.create();
 
         GameSetup setup = new GameSetup(1, 5);
@@ -94,6 +98,8 @@ public class BlackJackGame {
 
         ConsoleOutput output = new ConsoleOutput();
         ConsoleInputReader inputReader = new ConsoleInputReader();
+        RemoteController remoteController = new RemoteController();
+        Move playerMove = new Move();
 
         for (Player player : players) {
             int move = 0;
@@ -104,20 +110,37 @@ public class BlackJackGame {
                 move = inputReader.readUserIntegerInput();
 
                 if (move == 1) {
-                    player.getDeck().drawCard(gameDeck);
-                    output.print("You got " + player.getDeck().getCard(player.getDeck().getDeckSize() - 1));
-                    if (player.getDeck().cardsValue() > 21) {
-                        output.print("You lost a game. Your cards value are - " + player.getDeck().cardsValue());
-                        roundIsOver = true;
-                    }
+                    remoteController.setCommand(new MoveHitCommand(playerMove));
+                    remoteController.playerSelectedMove();
+                    roundIsOver = draw(player, gameDeck);
                 }
 
                 if (move == 2) {
-                    output.print("You select stand");
+                    remoteController.setCommand(new MoveStandCommand(playerMove));
+                    remoteController.playerSelectedMove();
                     roundIsOver = true;
                 }
             }
         }
+    }
+
+    public static boolean stand() {
+        ConsoleOutput output = new ConsoleOutput();
+        output.print("You select stand");
+        return true;
+    }
+
+    public static boolean draw(Player player, Deck gameDeck) {
+
+        ConsoleOutput output = new ConsoleOutput();
+        player.getDeck().drawCard(gameDeck);
+        output.print("You got " + player.getDeck().getCard(player.getDeck().getDeckSize() - 1));
+        if (player.getDeck().cardsValue() > 21) {
+            output.print("You lost a game. Your cards value are - " + player.getDeck().cardsValue());
+            return true;
+        }
+
+        return false;
     }
 
     private static void drawCards(ArrayList<Player> players, Player dealer, Deck gameDeck) {

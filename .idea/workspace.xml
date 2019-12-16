@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e206e40-b1ad-490d-9edb-a45831aff79e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tests/CardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/GameSetupTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/MoveHitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/MoveStandCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/RemoteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/Deck$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/Deck$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BlackJackGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BlackJackGame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PacMan/Tetris" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PacMan/reversi" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -54,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.tests in BlackJack">
+  <component name="RunManager" selected="Application.BlackJackGame">
     <configuration name="BlackJackGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.BlackJackGame" />
       <module name="BlackJack" />
@@ -93,9 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BlackJackGame" />
         <item itemvalue="JUnit.tests in BlackJack" />
         <item itemvalue="JUnit.GameSetupTest" />
-        <item itemvalue="Application.BlackJackGame" />
       </list>
     </recent_temporary>
   </component>
@@ -110,22 +109,23 @@
       <option name="presentableId" value="Default" />
       <updated>1576340007574</updated>
       <workItem from="1576340009135" duration="4696000" />
+      <workItem from="1576486893198" duration="3380000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Player.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BlackJack$BlackJackGame.ic" NAME="BlackJackGame Coverage Results" MODIFIED="1576437004106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
