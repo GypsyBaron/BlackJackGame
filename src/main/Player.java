@@ -37,7 +37,7 @@ public class Player {
 
 
     public boolean addBet(int bet) {
-        if (this.money > bet) {
+        if (this.money >= bet) {
             this.bet = bet;
             return true;
         } else {

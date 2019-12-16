@@ -42,6 +42,20 @@ public class BlackJackGame {
 
             showResults(players, dealer, roundDeck);
             moveCardsToMainDeck(players, dealer, roundDeck);
+
+            removePLayersWithZeroBalance(players);
+        }
+    }
+
+    private static void removePLayersWithZeroBalance(ArrayList<Player> players) {
+        int size = players.size();
+
+        for (int i = 0; i < size; i++) {
+            if (players.get(i).getMoney() == 0) {
+                players.remove(i);
+                i--;
+                size--;
+            }
         }
     }
 

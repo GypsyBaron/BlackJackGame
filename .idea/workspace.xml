@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e206e40-b1ad-490d-9edb-a45831aff79e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/command/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/command/MoveHitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/command/MoveStandCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/command/RemoteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/main/BlackJackGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BlackJackGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BlackJackGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576340007574</updated>
       <workItem from="1576340009135" duration="4696000" />
-      <workItem from="1576486893198" duration="3380000" />
+      <workItem from="1576486893198" duration="4706000" />
     </task>
     <servers />
   </component>
